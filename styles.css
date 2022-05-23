@@ -1,0 +1,82 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    text-align: center;
+}
+
+h1{
+    margin-bottom: 2rem;
+}
+.instructions{
+    margin-bottom: 1rem;
+}
+
+.rank-board{
+    max-width: 400px;
+    margin: auto;
+    list-style: none;
+    padding: 0;
+}
+
+.rank-person{
+    display: flex;
+    background-color: rgb(253, 252, 240);
+    width: 100%;
+    border: 1.5px solid black;
+
+
+}
+
+.rank-number{
+    background-color: grey;
+    width: 100px;
+    height: 80px;
+    display: grid;
+    place-content: center;
+    font-size: 2rem;
+
+}
+
+.rank-name{
+    text-indent: 1rem;
+    display: grid;
+    place-content: center;
+    font-size: 1.5rem;
+}
+
+.draggable{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: .5rem;
+}
+
+.rank-mover{
+    background-color: black;
+    width: 1.8rem;
+    height: .7rem;
+    cursor: pointer;
+}
+
+.draggable.over{
+    background-color: #666;;
+}
+
+button{
+    padding: .5rem .8rem;
+    font-size: 1.3rem;
+    margin-top: .7rem;
+    margin-bottom: .7rem;
+    cursor: pointer;
+}
+
+.rank-name.right{
+    color: green;
+}
+.rank-name.wrong{
+    color: red;
+}
